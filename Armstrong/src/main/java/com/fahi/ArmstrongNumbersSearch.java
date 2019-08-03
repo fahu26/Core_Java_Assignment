@@ -25,4 +25,9 @@ public class ArmstrongNumbersSearch {
       arr = number.toArray(arr); 
 	  return arr;
 }
+	  
+	  public static void main(String args[]) {
+		  ArmstrongNumbersSearch anumsearch =new ArmstrongNumbersSearch();
+		  anumsearch.checkIsArmstrongBetweenNumberRange(100, 1000);
+	  }
 }

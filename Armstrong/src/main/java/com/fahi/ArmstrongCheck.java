@@ -1,10 +1,6 @@
 package com.fahi;
 
 public class ArmstrongCheck {
-	
-	
-	
-	
 	public boolean checkIsArmstrong(int num) {
 		int a,temp,n,c=0;
 		temp=num;
@@ -21,10 +17,9 @@ public class ArmstrongCheck {
 		return false; 
 	}
 	
-	/*
-	 * public void main(String[] args) { //
-	 * checkIsArmstrongBetweenNumberRange(100,999); checkIsArmstrong(153); }
-	 */
-	 
+	public static void main(String args[]) {
+		ArmstrongCheck acheck=new ArmstrongCheck();
+		acheck.checkIsArmstrong(100);
+	}
 
 }
