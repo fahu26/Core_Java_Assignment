@@ -35,6 +35,16 @@ static InterestCalculator interestCalculator;
 		assertEquals(331.19, interestCalculator.CompoundInterest(1000, 10, 3), 0.2f);
 	}
 	
+	@Test
+	public void testCalculateCompoundInterest_WithEitherOfInputAsZero() {
+		assertEquals(0, interestCalculator.CompoundInterest(0, 10, 3), 0.2f);
+	}
+	
+	@Test
+	public void testCalculateSimpleInterest_WithEitherOfInputAsZero() {
+		assertEquals(0, interestCalculator.SimpleInterest(0, 10, 3), 0f);
+	}
+	
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 		interestCalculator=null;
