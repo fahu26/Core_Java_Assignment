@@ -26,7 +26,13 @@ public class ArmstrongNumbersSearchTest {
 	public void testValidResultsWhenNumberRangeis0To100() {
 		Integer[] number= {0,1};
 		assertArrayEquals(number, armsSearchCheck.checkIsArmstrongBetweenNumberRange(0, 100));
-	} 
+	}
+	
+	@Test
+	public void testSameValuesFor_MinRangeAndMAxRange() {
+		Integer[] number= {};
+		assertArrayEquals(number, armsSearchCheck.checkIsArmstrongBetweenNumberRange(0, 0));
+	}
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 		armsCheck=null;

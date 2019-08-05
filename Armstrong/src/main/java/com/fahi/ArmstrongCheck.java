@@ -2,6 +2,7 @@ package com.fahi;
 
 public class ArmstrongCheck {
 	public boolean checkIsArmstrong(int num) {
+		if(num>=0) {
 		int a,temp,n,c=0;
 		temp=num;
 		n=num;
@@ -11,15 +12,23 @@ public class ArmstrongCheck {
 			c=c+(a*a*a);
 		}
 		if(temp==c) {
-	    	System.out.println(c +" is an Armstrong number.");
+	    	System.out.println(num +" is an Armstrong number.");
 	    	return true;
 	    }
+		else {
+			System.out.println(num +" not an Armstrong number");
+			return false;
+		}
+		}
+		else {
+			System.out.println("Please enter valid number");
+		}
 		return false; 
 	}
 	
 	public static void main(String args[]) {
 		ArmstrongCheck acheck=new ArmstrongCheck();
-		acheck.checkIsArmstrong(100);
+		acheck.checkIsArmstrong(-2);
 	}
 
 }

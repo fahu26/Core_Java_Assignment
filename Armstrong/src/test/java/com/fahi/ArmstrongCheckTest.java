@@ -24,6 +24,16 @@ public class ArmstrongCheckTest {
 		assertFalse(armsCheck.checkIsArmstrong(9));
 	}
 	
+	@Test
+	public void testIsNumberPassed_NotValid() {
+		assertFalse(armsCheck.checkIsArmstrong(-2));
+	}
+	
+	@Test
+	public void testIsNumberPassed_Valid() {
+		assertFalse(armsCheck.checkIsArmstrong(5));
+	}
+	
 	@After
 	public void tearDown() throws Exception {
 		armsCheck=null;
