@@ -35,6 +35,11 @@ public class ResultCalculationTest {
 	}
 	
 	@Test
+	public void testResultCalculation_WithInputAsZero() {
+		assertEquals("Failed", resultCalculation.studentResult(0, 0, 0));
+	}
+	
+	@Test
 	public void testWithNegativeMarks() {
 		assertEquals("Invalid marks", resultCalculation.studentResult(-2, 0, 2));
 	}
