@@ -2,7 +2,6 @@ package comm.fahim;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.util.Scanner;
 
 public class InterestCalculator {
 	BigDecimal bd;
@@ -29,21 +28,4 @@ public class InterestCalculator {
 		System.out.println("Compound Interest: "+bd.doubleValue());
 		return bd.doubleValue();
 	}
-	
-	public static void main(String args[]) {
-		InterestCalculator interestCalculator=new InterestCalculator();
-		Scanner sf=new Scanner(System.in);
-		double principal,rate,years;
-		System.out.println("Enter the Prinicpal");
-		principal=sf.nextDouble();
-		System.out.println("Enter the Rate");
-		rate=sf.nextDouble();
-		System.out.println("Enter the Years");
-		years=sf.nextDouble();
-		sf.close();
-		interestCalculator.SimpleInterest(principal, rate, years);
-		interestCalculator.CompoundInterest(principal, rate, years);
-	}
-	
-	
 }
