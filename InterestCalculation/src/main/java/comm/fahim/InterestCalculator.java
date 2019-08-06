@@ -13,7 +13,6 @@ public class InterestCalculator {
 		System.out.println("Simple Interest: "+bd.doubleValue());
 		return bd.doubleValue();
 	}
-	
 	public double CompoundInterest(double principal,double rate,double years) {
 		
 		double amount,compoundInterest,t=1;
