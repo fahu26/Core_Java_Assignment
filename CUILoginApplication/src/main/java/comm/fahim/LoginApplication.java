@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class LoginApplication {
 	public Boolean Login(String userName,String passWord) {
 		boolean isvalid=false;
-		String loginId="fahim";
-		String logInPsw="123456";
-		if(userName==loginId && passWord==logInPsw) {
+		final String loginId="fahim";
+		final String logInPsw="123456";
+		if(loginId.equals(userName) && logInPsw.equals(passWord) && !userName.isEmpty() && !passWord.isEmpty()) {
 			isvalid=true;
 		}
 		else {
@@ -25,9 +25,7 @@ public class LoginApplication {
 		String userName=scanner.nextLine();
 		System.out.println("Enter Your Password: ");
 		String passWord=scanner.nextLine();
-		
 		boolean result=application.Login(userName, passWord);
-		System.out.println(i+"-->"+result);
 		if(result) {
 			System.out.println("Welcome "+userName);
 			scanner.close();
@@ -40,7 +38,5 @@ public class LoginApplication {
 				System.out.println("Contact Admin");
 				scanner.close();
 			}
-		
-	
 			}
 }}
