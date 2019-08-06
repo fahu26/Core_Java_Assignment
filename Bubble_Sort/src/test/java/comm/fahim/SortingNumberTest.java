@@ -21,16 +21,9 @@ static SortingNumber sortingNumber;
 	}
 	
 	@Test
-	public void testIfNumberAreSortedCorrectly_FailCase() {
+	public void testIfNumberAreSortedCorrectly_PassCase2() {
 		int [] numbers= {1,0,3,2};
-		int [] sortedNumber= {1,0,3,2};
-		assertArrayEquals(sortedNumber,sortingNumber.bubbleSort(numbers));
-	}
-	
-	@Test
-	public void testIfNumberAreSortedCorrectly_SizeMisMatchCase() {
-		int [] numbers= {1,0,3,2};
-		int [] sortedNumber= {1,0,3};
+		int [] sortedNumber= {0,1,2,3};
 		assertArrayEquals(sortedNumber,sortingNumber.bubbleSort(numbers));
 	}
 	

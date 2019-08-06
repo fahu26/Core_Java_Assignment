@@ -16,14 +16,4 @@ public class SortingNumber {
 		}
 		return numbers;
 	}
-	public static void main(String[] args) {
-		SortingNumber searchingNumber=new SortingNumber();
-		int numbers[]= {5,12,4,6,78,19,1,23,26,35,37,7,52,86,74};
-		searchingNumber.bubbleSort(numbers);
-		System.out.println("After Sorting: ");
-		for(int i=0;i<numbers.length;i++) {
-			System.out.print(numbers[i]+" ");
-		}
-		System.out.println();
-	}
 }
