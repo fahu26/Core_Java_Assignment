@@ -25,10 +25,4 @@ public class ArmstrongCheck {
 		}
 		return false; 
 	}
-	
-	public static void main(String args[]) {
-		ArmstrongCheck acheck=new ArmstrongCheck();
-		acheck.checkIsArmstrong(-2);
-	}
-
 }
