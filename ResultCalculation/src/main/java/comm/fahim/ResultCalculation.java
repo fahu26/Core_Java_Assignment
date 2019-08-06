@@ -29,20 +29,4 @@ public class ResultCalculation {
 		}
 		return result;
 	}
-	
-public static void main(String[] args) {
-ResultCalculation resultCalculation=new ResultCalculation();
-double english,maths,science;
-Scanner scanner=new Scanner(System.in);
-System.out.println("Enter marks of English:");
-english=scanner.nextDouble();
-System.out.println("Enter marks of Maths:");
-maths=scanner.nextDouble();
-System.out.println("Enter marks of Science:");
-science=scanner.nextDouble();
-scanner.close();
-resultCalculation.studentResult(english, maths, science);
-
-	}
-
 }
