@@ -16,7 +16,6 @@ public static Employee employee1,employee2,employee3,employee4,employee5,employe
 	employee3=new Employee(10000) {
 		@Override
 		double getSalaryAmount() {
-			// TODO Auto-generated method stub
 			return 10000;
 		}
 	};
@@ -25,7 +24,6 @@ public static Employee employee1,employee2,employee3,employee4,employee5,employe
 	employee6=new Employee(0) {
 		@Override
 		double getSalaryAmount() {
-			// TODO Auto-generated method stub
 			return 0;
 		}
 	};
@@ -66,6 +64,10 @@ public static Employee employee1,employee2,employee3,employee4,employee5,employe
 		employee1=null;
 		employee2=null;
 		employee3=null;
+		employee4=null;
+		employee5=null;
+		employee6=null;
+		
 	}
 
 }
