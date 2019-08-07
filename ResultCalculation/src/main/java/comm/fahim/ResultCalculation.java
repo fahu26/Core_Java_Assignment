@@ -1,5 +1,4 @@
 package comm.fahim;
-import java.util.Scanner;
 
 public class ResultCalculation {
 	public String studentResult(double english,double maths,double science) {
