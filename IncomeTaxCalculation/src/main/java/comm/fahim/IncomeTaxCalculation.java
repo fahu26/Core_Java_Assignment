@@ -1,7 +1,5 @@
 package comm.fahim;
 
-import java.util.Scanner;
-
 public class IncomeTaxCalculation {
 
 	public double taxCalculator(double annualIncome) {
