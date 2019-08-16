@@ -1,13 +1,17 @@
 package com.fahim;
 
+import java.io.IOException;
+
 import com.Exception.InsufficientBalanceException;
 
 public class Account {
 private int balance=10000;
-	public boolean withdraw(double amount) throws InsufficientBalanceException {
+	public boolean withdraw(int amount) throws InsufficientBalanceException {
 		boolean isAvailable=false;
 		if(amount<=0) {
-			throw new InsufficientBalanceException("Amount entered is invalid");
+			NumberFormatException  ae=new NumberFormatException("Exception");
+			ae.initCause(new IOException("Amount entered is invalid"));
+			throw ae;
 		}
 		else if(amount>balance) {
 			throw new InsufficientBalanceException("Your bank account have insufficient balance for this transaction");
@@ -17,5 +21,13 @@ private int balance=10000;
 			balance-=amount;
 		}
 		return isAvailable;
+	}
+	
+	public static void main(String args[]) {
+		Account account=new Account();
+		account.withdraw(0);
+		account.withdraw(12000);
+		account.withdraw(9000);
+		
 	}
 }

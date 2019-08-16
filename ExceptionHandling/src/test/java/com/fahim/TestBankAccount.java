@@ -2,6 +2,8 @@ package com.fahim;
 
 import static org.junit.Assert.*;
 
+import java.io.IOException;
+
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -26,7 +28,7 @@ static Account bankAccount;
 		assertTrue(bankAccount.withdraw(1200));
 	}
 	
-	@Test(expected = InsufficientBalanceException.class)
+	@Test(expected = NumberFormatException.class)
 	public void testAmountEnteredInvalid() {
 		assertFalse(bankAccount.withdraw(0));
 	}
