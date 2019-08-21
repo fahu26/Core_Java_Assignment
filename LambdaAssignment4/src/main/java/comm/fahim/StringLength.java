@@ -1,6 +1,5 @@
 package comm.fahim;
 import java.util.*;
-import java.util.function.Predicate;
 public class StringLength {
 
 	public static void main(String[] args)throws CloneNotSupportedException {
