@@ -3,12 +3,9 @@ package comm.fahim;
 public class ArithmeticOperation {
 
 	public static void main(String[] args) {
-		LambdaExampleAdd addExample=(a,b)->{System.out.println(a+b);
-		return 1;};
-		LambdaExampleSubtract subtractExample=(a,b)->{System.out.println(a-b);
-		return 1;};
-		LambdaExampleMultiply multiplyExample=(a,b)->{System.out.println(a*b);
-		return 1;};
+		LambdaExampleAdd addExample=(a,b)->{System.out.println(a+b);return 1;};
+		LambdaExampleSubtract subtractExample=(a,b)->{System.out.println(a-b);return 1;};
+		LambdaExampleMultiply multiplyExample=(a,b)->{System.out.println(a*b);return 1;};
 		LambdaExampleDivide divideExample=(a,b)->{
 			if(b==0){
 				return 0;
